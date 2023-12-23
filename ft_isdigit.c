@@ -6,11 +6,11 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:43:28 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/18 16:12:53 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/23 16:31:37 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

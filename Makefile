@@ -6,7 +6,7 @@
 #    By: alorru <alorru@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/20 14:22:34 by alorru            #+#    #+#              #
-#    Updated: 2023/12/20 15:41:27 by alorru           ###   ########.fr        #
+#    Updated: 2023/12/23 17:45:16 by alorru           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,10 @@ NAME = libft.a
 SRC = ft_atoi.c ft_isalnum.c ft_isalpha.c\
 		ft_isascii.c ft_isdigit.c ft_isprint.c\
 		ft_memset.c ft_strlcat.c ft_strlcpy.c\
-		ft_strlen.c
+		ft_strlen.c ft_memmove.c ft_memcpy.c\
+		ft_memcmp.c ft_strnstr.c ft_strrchr.c\
+		ft_strchr.c ft_toupper.c ft_tolower.c\
+		ft_bzero.c
 OBJ = $(SRC:.c=.o)
 LIB = ar rcs $(NAME)
 

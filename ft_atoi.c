@@ -6,21 +6,20 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 10:39:39 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/18 10:40:02 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/20 17:36:19 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int sign;
-	int res;
+	int	i;
+	int	sign;
+	int	res;
 
 	i = 0;
-	while ((str[i] >= 9 || str[i] <= 13)|| str[i] == ' ')
+	while ((str[i] >= 9 || str[i] <= 13) || str[i] == ' ')
 	{
 		i++;
 	}

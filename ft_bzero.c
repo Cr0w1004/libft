@@ -6,7 +6,7 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 17:17:48 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/18 17:21:23 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/23 16:29:08 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,14 @@
 
 void	bzero(void *dst, size_t n)
 {
-	
+	size_t			i;
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)dst;
+	i = 0;
+	while (n--)
+	{
+		ptr[i] = 0;
+		i++;
+	}
 }
