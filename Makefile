@@ -6,7 +6,7 @@
 #    By: alorru <alorru@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/20 14:22:34 by alorru            #+#    #+#              #
-#    Updated: 2023/12/23 17:45:16 by alorru           ###   ########.fr        #
+#    Updated: 2023/12/29 14:06:35 by alorru           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRC = ft_atoi.c ft_isalnum.c ft_isalpha.c\
 		ft_strlen.c ft_memmove.c ft_memcpy.c\
 		ft_memcmp.c ft_strnstr.c ft_strrchr.c\
 		ft_strchr.c ft_toupper.c ft_tolower.c\
-		ft_bzero.c
+		ft_bzero.c ft_strjoin.c ft_substr.c\
+		ft_strdup.c ft_calloc.c
 OBJ = $(SRC:.c=.o)
 LIB = ar rcs $(NAME)
 

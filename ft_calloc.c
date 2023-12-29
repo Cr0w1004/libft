@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/18 17:17:48 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/27 15:16:09 by alorru           ###   ########.fr       */
+/*   Created: 2023/12/27 15:01:27 by alorru            #+#    #+#             */
+/*   Updated: 2023/12/27 15:28:53 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *dst, size_t n)
+void	*calloc(size_t num, size_t size)
 {
-	size_t			i;
-	unsigned char	*ptr;
+	size_t	totdim;
+	void	*ptr;
 
-	ptr = (unsigned char *)dst;
-	i = 0;
-	while (n--)
-	{
-		ptr[i] = 0;
-		i++;
-	}
+	totdim = num * size;
+	ptr = malloc(totdim);
+	if (!ptr)
+		return (NULL);
+	if (ptr)
+		memset(ptr, 0, totdim);
+	return (ptr);
 }
