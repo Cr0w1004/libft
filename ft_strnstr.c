@@ -6,23 +6,11 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/23 16:38:31 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/23 17:00:21 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/29 16:18:23 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strcaz(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 char	strnstr(const char	*big, const char	*little, size_t	len)
 {
@@ -32,7 +20,7 @@ char	strnstr(const char	*big, const char	*little, size_t	len)
 
 	if (*little == '\0')
 		return ((char *)big);
-	little_len = ft_strcaz(little);
+	little_len = ft_strlen(little);
 	i = 0;
 	while (i < len && big[i] != '\0')
 	{

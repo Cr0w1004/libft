@@ -6,23 +6,11 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 10:41:08 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/20 17:38:05 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/29 16:17:27 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strcaz(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -31,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	if (!dst || !src)
 		return (0);
-	srcsize = ft_strcaz(src);
+	srcsize = ft_strlen(src);
 	i = 0;
 	if (dstsize != 0)
 	{

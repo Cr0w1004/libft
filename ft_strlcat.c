@@ -6,7 +6,7 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 11:33:58 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/20 17:34:47 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/29 16:17:57 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ size_t	ft_strlcat( char *dst, const char *src, size_t size )
 
 	if (!dst || !src)
 		return (0);
-	srcsize = ft_strcaz(src);
+	srcsize = ft_strlen(src);
 	i = 0;
 	j = 0;
 	if (dstsize != '\0')
