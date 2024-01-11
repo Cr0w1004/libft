@@ -6,23 +6,11 @@
 /*   By: alorru <alorru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 11:33:58 by alorru            #+#    #+#             */
-/*   Updated: 2023/12/29 16:17:57 by alorru           ###   ########.fr       */
+/*   Updated: 2023/12/29 16:19:41 by alorru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strcaz(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 size_t	ft_strlcat( char *dst, const char *src, size_t size )
 {

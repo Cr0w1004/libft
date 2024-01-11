@@ -6,11 +6,11 @@
 #    By: alorru <alorru@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/20 14:22:34 by alorru            #+#    #+#              #
-#    Updated: 2023/12/29 14:06:35 by alorru           ###   ########.fr        #
+#    Updated: 2024/01/11 11:23:48 by alorru           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = cc
 CFLAG = -Wall -Wextra -Werror
 NAME = libft.a 
 SRC = ft_atoi.c ft_isalnum.c ft_isalpha.c\
@@ -20,7 +20,7 @@ SRC = ft_atoi.c ft_isalnum.c ft_isalpha.c\
 		ft_memcmp.c ft_strnstr.c ft_strrchr.c\
 		ft_strchr.c ft_toupper.c ft_tolower.c\
 		ft_bzero.c ft_strjoin.c ft_substr.c\
-		ft_strdup.c ft_calloc.c
+		ft_strdup.c ft_calloc.c ft_strtrim.c\
 OBJ = $(SRC:.c=.o)
 LIB = ar rcs $(NAME)
 
@@ -37,11 +37,11 @@ $(NAME): $(OBJ)
 
 clean:
 		@ rm -f $(OBJ)
-		@ echo "$(CIANO)file oggetto di (NAME) rimossi con successo"
+		@ echo "$(RED)file oggetto di (NAME) rimossi con successo"
 				
 fclean: clean
 		@ rm -f $(NAME)
-		@ echo "$(RED)$(NAME) rimossa con successo"
+		@ echo "$(GREEN)$(NAME) rimossa con successo"
 
 re: fclean all 
 
